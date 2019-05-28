@@ -1,0 +1,18 @@
+﻿
+@model NaiveBayse.Controllers.MailModel
+@{
+    ViewBag.Title = "NaiveClassifier";
+}
+
+<h2>NaiveClassifier</h2>
+<p>@ViewBag.TruePositive</p>
+<p>@ViewBag.TrueNegative</p>
+<p>@ViewBag.FalsePositive</p>
+<p>@ViewBag.FalseNegative</p>
+<p>@ViewBag.MailResult</p>
+<form action="/Home/NaiveClassifier" method="post">
+    <label>type your mail text</label>
+    <textarea id="mailText" name="mailText" rows="10" cols="70"></textarea>
+    <input type="submit" value="Check your mail type"/>
+</form>
+
